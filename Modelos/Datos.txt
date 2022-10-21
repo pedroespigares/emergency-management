@@ -1,0 +1,105 @@
+Paciente:
+
+- Num historia --> Se puede sacar la historia como tal (Anamnesis)
+- Nombre y apellidos
+- Fecha nac
+- DNI
+- País nacimiento
+- Sexo
+- Seguridad social
+- Teléfono
+- Domicilio
+- Alergías
+- Historia (Activo o pasivo (Se puede poner en rojo)) --> Pasivo es q esta muerto
+
+
+Paciente a Urgencia --> 1-N
+
+
+Urgencia: 
+
+- Episodio (Identificador)
+- Estado (Alta, ingreso, observación de urgencia o exitus(muerto))
+- Fecha y hora entrada
+- Fecha y hora salida
+- Motivo de consulta
+- Exploración
+- Constantes(-Tension, -pulso)
+- Recomendación
+
+
+
+
+Juicio clínico:
+- Codigo
+- Descripcion
+(Opcional buscar los códigos de clasificación internacional de enfermedades)
+
+
+
+
+Medico:
+
+- Nombre y apellidos
+- CNP --> Codigo Numérico Personal
+- Especialidad
+
+
+
+
+Plan de Actuación que puede ser
+
+- Especialista ????
+
+
++ Tranfusión
+	- Num urgencia (bd)
+	- Peticion (codigo de solicitud)
+	- Grupo Sanguíneo
+	- IRH --> El + o -
+	- Transfusiones previas o no
+	- Religión (por si acaso)
+	- Consentimiento informado
+
++ Radiología
+	- Num urgencia (bd)
+	- Peticion (codigo de solicitud)
+	- Embarazo si o no
+	- Uso de contraste si o no
+	- Consentimiento informado
+
++ Cura
+	- Num urgencia (bd)
+	- Tipo de cura (sutura, quemadura, etc)
+	- Vacunación antitetánica si o no
+	- Medicacion usada (anestesia, etc)
+
++ Medicación
+	- Num urgencia (bd)
+	- Nombre
+	- Dosis de administración
+	
++ Analitica
+	- Num urgencia (bd)
+	- Petición (codigo de solicitud)
+	- Tipo de pruebas (Hemograma, bioquimica, coagulacion) Una lista amos ya vere como hacerlo
+
++ Inmovilizaciones
+	- Num urgencia (bd)
+	- Tipo (parcial o total)
+	- Lugar de inmovilización
+
++ Oxigenoterapia
+	- Num urgencia (bd)
+	- Nivel de oxígeno en sangre
+	- Tipo de terapia requerida (Gafillas, Mascarilla, etc)
+
++ Reanimacion Cardio Pulmonar
+	+ Num urgencia (bd)
+	+ Tipo
+
+
+Situaciones especiales
+	- Tipo de situacion especial --> Urgencias psiquiatricas, infectocontagiosas --> llamar al juez
+					 Pacientes violentos --> autoridades
+
